@@ -1,7 +1,7 @@
-from regras import *
-from tabuleiro import *
-from jogada import *
-from telas import *
+from src.jogada import *
+from src.regras import *
+from src.tabuleiro import *
+from src.telas import *
 
 if __name__ ==  '__main__':
   tentativas = modoDeJogo()

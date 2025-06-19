@@ -1,4 +1,4 @@
-from telas import *
+from .telas import *
 
 def regras():
   

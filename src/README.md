@@ -1,7 +1,6 @@
 # Jogo Batalha Naval em Python
 
 ## Descrição
-Este projeto é referente a uma atividade da disciplina de algoritimos no curso de Ciência de Dados e Inteligência Arficial da Universiade Estadual de Londrina.
 
 Este projeto implementa o clássico jogo Batalha Naval em Python, onde o jogador deve descobrir a posição dos navios em um tabuleiro 10x10. Os navios são posicionados aleatoriamente pelo sistema e o jogador tem um número limitado de tentativas para acertar todos os navios.
 
@@ -34,20 +33,7 @@ python main.py
 
 ---
 
-## Decisões Funcionamento
-
-### Tabuleiros
-- Existem 3 tabuleiros rodando simultaneamente:
-  - ```tabuleiro``` : tabuleiro real que está com a posição de todas as peças
-  - ```tabuleiro_mascarado``` : aquele que é exibido para o jogador com todas as posições inicialmente preenchidas por ```X```
-  - ```tabuleiro_contador``` : tabuleiro backend para contar a quantidade de peças que o jogador acertou e determinar vitória, inicialmente preenchidas por ```~```
-
-### Determinar vitória
-
-#### O sistema para determinar vitória desenvovlido é feito através da seguinte equação: ```len(tabuleiro)*len(tabuleiro) - somatório das peças```
-
-#### Essa conta representa a quantidade total de casas do tabuleiro menos a quantidade de peças existentes. A partir do momento que a quantidade de água presente no tabuleiro é igual ao resultado da equação, é sinal que o jogador venceu a partida.
-
+## Decisões de Design e Funcionamento
 
 ### Posicionamento dos Navios
 
@@ -55,7 +41,6 @@ python main.py
 - Os navios (Porta-aviões, Navio de batalha, Cruzador, Destruidor e Submarino) são representados por letras iniciais e possuem tamanhos definidos.
 - O posicionamento dos navios é aleatório, horizontal ou vertical, garantindo que não haja sobreposição.
 - Um validador confere se a posição escolhida para o navio está livre antes de posicioná-lo.
-
 
 ### Controle de Jogadas
 
@@ -100,5 +85,12 @@ Você atingiu a água!
 
 ---
 
-*Idealizado e desenvolvido por Leonardo Madeira*<br>
-*Apenas o Readme.md foi gerado com auxílio de IA*
+## Considerações Finais
+
+Este projeto foi desenvolvido para exercitar conceitos de programação estruturada, manipulação de listas bidimensionais, controle de fluxo, além de lidar com entradas e saídas no terminal.
+
+Contribuições e melhorias são bem-vindas!
+
+---
+
+*Desenvolvido por Leonardo Madeira*
